@@ -1,0 +1,32 @@
+Best hyper-parameters:
+DQN - 189 Episodes (245 Episodes for Uncertainty)
+Seed = 124
+BUFFER_SIZE = int(1e5)
+BATCH_SIZE = 64
+GAMMA = 0.99
+TAU = 1e-3
+LR = 1e-3
+UPDATE_EVERY = 1
+MODEL_ARCHITECTURE = QNetwork
+EpsilonDecay = 0.98
+Dueling Double DQN best params - 280 Episodes (360 Episodes for Uncertainty)
+Seed = 125
+BUFFER_SIZE = int(1e5)
+BATCH_SIZE = 64
+GAMMA = 0.9
+TAU = 1e-3
+LR = 5e-4
+UPDATE_EVERY = 1
+MODEL_ARCHITECTURE = DuelingQNetwork
+EpsilonDecay = 0.99
+DDPG best params - 125 Episodes (132 Episodes for Uncertainty)
+Seed = 125 (124 for uncertainty)
+ReplayBufferSize = int(1e5)
+GAMMA = 0.99
+LR_Actor = 1e-4
+LR_Critic = 1e-3
+Weight_Decay_Critic = 1e-2
+Epsilon = 1.0
+EpsilonDecay = 0.99
+BatchSize = 256
+UpdatesPerStep = 2
